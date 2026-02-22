@@ -21,7 +21,7 @@ An Azure Function with a Blob Storage trigger will process uploaded images and a
 
 ## Mermaid Architecture Diagram
 
-```
+```mermaid
 flowchart TD
     Client[Client uploads image] --> API[Express API]
     API --> Blob[Azure Blob Storage]
