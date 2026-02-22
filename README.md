@@ -25,8 +25,8 @@ An Azure Function with a Blob Storage trigger will process uploaded images and a
 flowchart TD
     Client[Client uploads image] --> API[Express API]
     API --> Blob[Azure Blob Storage]
-    Blob --> Function[Azure Function (Blob Trigger)]
-    Function --> Gray[Apply Grayscale]
+    Blob --> Function[Azure_Function]
+    Function --> Gray[Apply_Grayscale]
     Gray --> Blob
-    API -.-> SAS[SAS URL returned to client]
+    API -.-> SAS[SAS_URL_returned_to_client]
 ```
